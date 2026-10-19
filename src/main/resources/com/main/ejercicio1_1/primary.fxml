@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.ejercicio1_1.PrimaryController">
+   <children>
+      <Label layoutX="30.0" layoutY="40.0" text="Fecha de nacimiento">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFecha" layoutX="200.0" layoutY="37.0" prefWidth="160.0" promptText="dd/mm/aaaa" />
+      
+      <Button fx:id="btnCalcular" layoutX="50.0" layoutY="100.0" onAction="#btnCalcularOnAction" prefWidth="100.0" text="Calcular" />
+      <Button fx:id="btnLimpiar" layoutX="170.0" layoutY="100.0" onAction="#btnLimpiarOnAction" prefWidth="100.0" text="Limpiar" />
+      
+      <Label fx:id="lblResultado" alignment="CENTER" layoutX="20.0" layoutY="170.0" prefWidth="360.0">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
